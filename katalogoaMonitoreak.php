@@ -12,81 +12,15 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
-                    padding="8px" class="center"></a>
-        </div>
-    </header>
-    <div class="sticky">
-        <div class="navbar">
-            <div class="left">
-                <a class="left" href="hasiera.html">Hasiera</a>
-                <a class="left" href="norGara.html">Nor gara</a>
-                <div class="subnav left active">
-                    <button class="subnavbtn">Katalogoa <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="katalogoa.html"><b>Produktu guztiak |</b></a>
-                        <a href="katalogoaMugikorrak.html">Mugikorrak</a>
-                        <a href="katalogoaOrdenagailuak.html">Ordenagailuak</a>
-                        <a href="katalogoaMonitoreak.html">Monitoreak</a>
-                        <a href="katalogoaAurikularrak.html">Aurikularrak</a>
-                    </div>
-                </div>
-                <a class="left" href="prodSaldu.html">Zure produktuak saldu</a>
-                <a class="left" href="kontaktua.html">Kontaktua</a>
-            </div>
-            <div class="right">
-                <a class="right">
-                    <form action="buscar.php" method="GET">
-                        <input type="search" name="query" placeholder="Bilatu...">
-                    </form>
-                </a>
-                <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera_EN.html"><img src="irudiak/IKONOAK/uk.png"></a>
-
-            </div>
-        </div>
-    </div>
-    </form>
-    </div>
-    <div id="saioHasiera" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Saioa Hasi</h2>
-            <form>
-                <label for="erabiltzailea">Erabiltzailea:</label>
-                <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required><br><br>
-                <label for="pasahitza">Pasahitza:</label>
-                <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required><br><br>
-                <button type="submit">Saioa Hasi</button>
-            </form>
-        </div>
-    </div>
-    <div id="saskia" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Saskia</h2>
-            <h3>Saskia hutsik dago</h3>
-        </div>
-    </div>
-
+    <?php require_once "header.php";
+    echo headerSortu();
+    ?>
+    
     <div class="general">
         <div class="sidebar">
             <ul class="prod">
                 <form>
-                    <li>
-                        <label for="modeloa">
-                            <h3 class="pm">Produktu mota:</h3>
-                        </label>
-                        <select name="modeloa" id="modeloa">
-                            <option value="mugikorra">Mugikorra</option>
-                            <option value="ordenagailua">Ordenagailua</option>
-                            <option value="aurikularra">Aurkilarra</option>
-                            <option value="monitorea">Monitorea</option>
-                        </select> <br><br>
-                    </li>
+
                     <li>
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item1">
@@ -169,18 +103,16 @@
                                 <h3>Sistema eragilea:</h3>
                             </label>
                             <div class="accordion-content">
-                                <input type="checkbox" name="android" id="android" />
-                                <label for="android">Android</label> <br>
-                                <input type="checkbox" name="miui" id="miui" />
-                                <label for="miui">MIUI</label> <br>
-                                <input type="checkbox" name="oxygenos" id="oxygenos" />
-                                <label for="oxygenos">OxygenOs</label> <br>
-                                <input type="checkbox" name="ios" id="ios" />
-                                <label for="ios">IOS</label> <br>
-                                <input type="checkbox" name="macos" id="macos" />
-                                <label for="macos">MacOS</label> <br>
-                                <input type="checkbox" name="windows" id="windows" />
-                                <label for="windows">Windows</label> <br>
+                                <input type="checkbox" name="alurin" id="alurin" />
+                                <label for="alurin">Alurin</label> <br>
+                                <input type="checkbox" name="msi" id="msi" />
+                                <label for="msi">MSI</label> <br>
+                                <input type="checkbox" name="lg" id="lg" />
+                                <label for="lg">LG</label> <br>
+                                <input type="checkbox" name="asus" id="asus" />
+                                <label for="asus">Asus</label> <br>
+                                <input type="checkbox" name="aoc" id="aoc" />
+                                <label for="aoc">AOC</label> <br>
                             </div>
                         </div>
                     </li> <br>
@@ -217,55 +149,35 @@
             <p><b>Prezioa:</b> 85€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
-            <p><b>Marka:</b> HP</p>
-            <p><b>Modeloa:</b> 15-FD0079NS</p>
-            <p><b>Prezioa:</b> 498€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/1.1.Produktua.png" />
+            <p><b>Marka:</b> MSI</p>
+            <p><b>Modeloa:</b> G24C4 E3</p>
+            <p><b>Prezioa:</b> 119€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/1.XIAOMI REDMI NOTE 13 1.png" />
-            <p><b>Marka:</b>Xiaomi</p>
-            <p><b>Modeloa:</b>Redmi Note 13</p>
-            <p><b>Prezioa:</b>164,94€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/3.1.Produktua.png" />
+            <p><b>Marka:</b>LG</p>
+            <p><b>Modeloa:</b>32UR550-B</p>
+            <p><b>Prezioa:</b>279€ </p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
-            <p><b>Marka:</b>Lenovo</p>
-            <p><b>Modeloa:</b>IdeaPad Gaming 3 15IAH7</p>
-            <p><b>Prezioa:</b> 699€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/4.1.Produktua.png" />
+            <p><b>Marka:</b>Asus</p>
+            <p><b>Modeloa:</b>VA24EHF</p>
+            <p><b>Prezioa:</b> 89€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
-            <p><b>Marka:</b>Apple</p>
-            <p><b>Modeloa:</b>AirPods 4 </p>
-            <p><b>Prezioa:</b> 149€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/5.1.Produktua.png" />
+            <p><b>Marka:</b>AOC</p>
+            <p><b>Modeloa:</b>CQ32G2SE</p>
+            <p><b>Prezioa:</b> 199€ </p>
         </div>
-        <div id="produktua6">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/6.OnePlus Nord 4 1.png" />
-            <p><b>Marka:</b>Oneplus</p>
-            <p><b>Modeloa:</b>Nord 4</p>
-            <p><b>Prezioa:</b> 519€ </p>
-        </div>
-        <div id="produktua7">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
-            <p><b>Marka:</b>Medion</p>
-            <p><b>Modeloa:</b>Erazer Crawler E30e</p>
-            <p><b>Prezioa:</b> 649€ </p>
-        </div>
-        <div id="produktua8">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/7.Galaxy Z Fold 6 1.png" />
-            <p><b>Marka:</b>Samsung</p>
-            <p><b>Modeloa:</b>Galaxy Z Fold6</p>
-            <p><b>Prezioa:</b>1701€</p>
-        </div>
-        <div id="produktua9">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
-            <p><b>Marka:</b>PcCom</p>
-            <p><b>Modeloa:</b>Revolt 3050</p>
-            <p><b>Prezioa:</b> 538€ </p>
-        </div>
+        <div id="produktua5">
+            <img id="argazkia" src="irudiak/PRODUKTUAK/LASTER.svg" />
 
+        </div>
     </div>
+
     <footer>
         <div class="footer">
             <div class="footerra">
@@ -279,6 +191,7 @@
 
         </div>
     </footer>
+
 </body>
 
 </html>

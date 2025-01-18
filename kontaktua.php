@@ -12,60 +12,27 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera_EN.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
-                    padding="8px" class="center"></a>
-        </div>
-    </header>
-    <div class="sticky">
-        <div class="navbar">
-            <div class="left">
-                <a class="left" href="hasiera_EN.html">Home</a>
-                <a class="left" href="norGara_EN.html">About us</a>
-                <div class="subnav left">
-                    <button class="subnavbtn">Catalogue <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="katalogoa_EN.html"><b>All products |</b></a>
-                        <a href="katalogoaMugikorrak_EN.html">Mobile phones</a>
-                        <a href="katalogoaOrdenagailuak_EN.html">Laptops</a>
-                        <a href="katalogoaMonitoreak_EN.html">Screens</a>
-                        <a href="katalogoaAurikularrak_EN.html">Headphones</a>
-                    </div>
-                </div>
-                <a class="left" href="prodSaldu_EN.html">Sell your products</a>
-                <a class="left active" href="kontaktua_EN.html">Contact us</a>
-            </div>
-            <div class="right">
-                <a class="right">
-                    <form action="buscar.php" method="GET">
-                        <input type="search" name="query" placeholder="Search...">
-                    </form>
-                </a>
-                <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera.html"><img src="irudiak/IKONOAK/uk.png"></a>
-
-            </div>
-        </div>
+<?php require_once "header.php";
+    echo headerSortu();
+    ?>
     <div id="saioHasiera" class="lehioa">
         <div class="lehioa-contenido">
             <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Sign in</h2>
+            <h2 class="lehioa">Saioa Hasi</h2>
             <form>
-                <label for="erabiltzailea">User name:</label>
+                <label for="erabiltzailea">Erabiltzailea:</label>
                 <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required><br><br>
-                <label for="pasahitza">Password:</label>
+                <label for="pasahitza">Pasahitza:</label>
                 <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required><br><br>
-                <button type="submit">Sign in</button>
+                <button type="submit">Saioa Hasi</button>
             </form>
         </div>
     </div>
     <div id="saskia" class="lehioa">
         <div class="lehioa-contenido">
             <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Cart</h2>
-            <h3>Your cart is empty</h3>
+            <h2 class="lehioa">Saskia</h2>
+            <h3>Saskia hutsik dago</h3>
         </div>
     </div>
     <div class="kontaktua">
@@ -76,7 +43,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="helbidea">
-            <h2>Adress</h2>
+            <h2>Helbidea</h2>
             <div><i class="fa-solid fa-location-dot"></i> C. Urdaneta, 6, 20240 Ordizia,
                 Guipuzkoa</div>
             <div><i class="fa-solid fa-envelope"></i> administrazioa@iamarket.com</div>
@@ -84,19 +51,19 @@
         </div>
 
         <div class="infoForm">
-            <h2>Contact form:</h2>
+            <h2>Kontaktua</h2>
             <form>
-                <label for="name">Name</label><span class="required">*</span><br>
+                <label for="name">Izena</label><span class="required">*</span><br>
                 <input class="kont" type="text" id="name" required><br>
-                <label for="surname">Surname</label><br>
+                <label for="surname">Abizena</label><br>
                 <input class="kont" type="text" id="surname"><br>
-                <label for="mail">E-mail</label><span class="required">*</span><br>
-                <input class="kont" type="email" id="mail" placeholder="mail@example.com" required><br>
-                <label for="tel">Phone number</label><br>
+                <label for="mail">Posta elektronikoa</label><span class="required">*</span><br>
+                <input class="kont" type="email" id="mail" placeholder="mail@adibidea.com" required><br>
+                <label for="tel">Telefonoa</label><br>
                 <input class="kont" type="tel" id="tel" placeholder="123 45 67 89"><br>
-                <label for="longtext">Subject</label><span class="required">*</span><br>
-                <textarea class="kont" id="longtext" placeholder="Write..." required></textarea>
-                <input class="botoiak" type="submit" value="Send"><input class="botoiak" type="reset" value="Delete">
+                <label for="longtext">Gaia</label><span class="required">*</span><br>
+                <textarea class="kont" id="longtext" placeholder="Idatzi zure arazoa..." required></textarea>
+                <input class="botoiak" type="submit" value="Bidali"><input class="botoiak" type="reset" value="Ezabatu">
 
             </form>
         </div>

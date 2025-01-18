@@ -8,30 +8,13 @@
     <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css" /> 
-    <?php require_once "header.php" ?>
 </head>
 
 <body>
-    <div id="saioHasiera" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Saioa Hasi</h2>
-            <form>
-                <label for="erabiltzailea">Erabiltzailea:</label>
-                <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required><br><br>
-                <label for="pasahitza">Pasahitza:</label>
-                <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required><br><br>
-                <button type="submit">Saioa Hasi</button>
-            </form>
-        </div>
-    </div>
-    <div id="saskia" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Saskia</h2>
-            <h3>Saskia hutsik dago</h3>
-        </div>
-    </div>
+<?php require_once "header.php"; 
+echo headerSortu();
+?>
+
     <img class="deskontuak" src="irudiak/DESKONTUAK/Deskontuak.png" alt="deskontuak">
     <div class="produktuak">
         <h1>Azken produktuak</h1>

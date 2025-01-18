@@ -12,69 +12,15 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera_EN.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
-                    padding="8px" class="center"></a>
-        </div>
-    </header>
-    <div class="sticky">
-        <div class="navbar">
-            <div class="left">
-                <a class="left" href="hasiera_EN.html">Home</a>
-                <a class="left" href="norGara_EN.html">About us</a>
-                <div class="subnav left">
-                    <button class="subnavbtn">Catalogue <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="katalogoa_EN.html"><b>All products |</b></a>
-                        <a href="katalogoaMugikorrak_EN.html">Monile phones</a>
-                        <a href="katalogoaOrdenagailuak_EN.html">Laptops</a>
-                        <a href="katalogoaMonitoreak_EN.html">Screens</a>
-                        <a href="katalogoaAurikularrak_EN.html">Headphones</a>
-                    </div>
-                </div>
-                <a class="left" href="prodSaldu_EN.html">Sell your products</a>
-                <a class="left" href="kontaktua_EN.html">Contact us</a>
-            </div>
-            <div class="right">
-                <a class="right">
-                    <form action="buscar.php" method="GET">
-                        <input type="search" name="query" placeholder="Search...">
-                    </form>
-                </a>
-                <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera.html"><img src="irudiak/IKONOAK/ikurriña.png"></a>
-
-            </div>
-        </div>
-    </div>
-    </form>
-    </div>
-    <div id="saioHasiera" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Sign in</h2>
-            <form>
-                <label for="erabiltzailea">User name:</label>
-                <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required><br><br>
-                <label for="pasahitza">Password:</label>
-                <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required><br><br>
-                <button type="submit">Sign in</button>
-            </form>
-        </div>
-    </div>
-    <div id="saskia" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Cart</h2>
-            <h3>Your cart is empty</h3>
-        </div>
-    </div>
+<?php require_once "headerEN.php";
+    echo createheader();
+    ?>
+    
     <div class="general">
         <div class="sidebar">
             <ul class="prod">
                 <form>
+                   
                     <li>
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item1">
@@ -197,34 +143,34 @@
             </ul>
         </div>
         <div id="produktua1">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
-            <p><b>Brand:</b>Apple</p>
-            <p><b>Model:</b>AirPods 4</p>
-            <p><b>Price:</b> 149€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
+            <p><b>Brand:</b>Alurin</p>
+            <p><b>Model:</b>CoreVision 100</p>
+            <p><b>Prize:</b> 85€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/2.AirPods Pro 2ª Generación 1.png" />
-            <p><b>Brand:</b>Apple</p>
-            <p><b>Model:</b>AirPods Pro 2ª Gen.</p>
-            <p><b>Price:</b> 223,99€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/1.1.Produktua.png" />
+            <p><b>Brand:</b> MSI</p>
+            <p><b>Model:</b> G24C4 E3</p>
+            <p><b>Prize:</b> 119€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/3.AirPods 2ªGeneración 1.png" />
-            <p><b>Brand:</b>Apple</p>
-            <p><b>Model:</b>AirPods 2ª Gen.</p>
-            <p><b>Price:</b>94€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/3.1.Produktua.png" />
+            <p><b>Brand:</b>LG</p>
+            <p><b>Model:</b>32UR550-B</p>
+            <p><b>Prize:</b>279€ </p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/4.AirPods 3ªGeneración 2 1.png" />
-            <p><b>Brand:</b>Apple</p>
-            <p><b>Model:</b>AirPods 3ª Gen.</p>
-            <p><b>Price:</b> 125,40€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/4.1.Produktua.png" />
+            <p><b>Brand:</b>Asus</p>
+            <p><b>Model:</b>VA24EHF</p>
+            <p><b>Prize:</b> 89€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/5.AirPods Max 1.png" />
-            <p><b>Brand:</b>Apple</p>
-            <p><b>Model:</b>AirPods Max</p>
-            <p><b>Price:</b> 403,99€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/5.1.Produktua.png" />
+            <p><b>Brand:</b>AOC</p>
+            <p><b>Model:</b>CQ32G2SE</p>
+            <p><b>Prize:</b> 199€ </p>
         </div>
         <div id="produktua5">
             <img id="argazkia" src="irudiak/PRODUKTUAK/LASTER.svg" />
@@ -244,21 +190,7 @@
             <div class="footrights"><i class="fa-solid fa-copyright"></i> 2024 AI MARKET S.L.</div>
 
         </div>
-        <footer>
-            <div class="footer">
-                <div class="footerra">
-                    <div class="footlogo"><img src="irudiak/IKONOAK/LOGO txuria.svg" width="100px"></div>
-                    <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> C. Urdaneta, 6, 20240
-                        Ordizia,
-                        Guipuzkoa</div>
-                    <div class="footmail footleft"><i class="fa-solid fa-envelope"></i> administrazioa@iamarket.com
-                    </div>
-                    <div class="foottel footleft"><i class="fa-solid fa-phone"></i> +34 623 34 76 34</div>
-                </div>
-                <div class="footrights"><i class="fa-solid fa-copyright"></i> 2024 AI MARKET S.L.</div>
-
-            </div>
-        </footer>
+    </footer>
 
 </body>
 

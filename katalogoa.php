@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AI Market | Catalogue</title>
+    <title>AI Market | Katalogoa</title>
     <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
@@ -12,73 +12,38 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera_EN.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
-                    padding="8px" class="center"></a>
-        </div>
-    </header>
-    <div class="sticky">
-        <div class="navbar">
-            <div class="left">
-                <a class="left" href="hasiera_EN.html">Home</a>
-                <a class="left" href="norGara_EN.html">About us</a>
-                <div class="subnav left active">
-                    <button class="subnavbtn">Catalogue <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="katalogoa_EN.html"><b>All products |</b></a>
-                        <a href="katalogoaMugikorrak_EN.html">Mobile phones</a>
-                        <a href="katalogoaOrdenagailuak_EN.html">Laptops</a>
-                        <a href="katalogoaMonitoreak_EN.html">Screens</a>
-                        <a href="katalogoaAurikularrak_EN.html">Headphones</a>
-                    </div>
-                </div>
-                <a class="left" href="prodSaldu_EN.html">Sell your products</a>
-                <a class="left" href="kontaktua_EN.html">Contact us</a>
-            </div>
-            <div class="right">
-                <a class="right">
-                    <form action="buscar.php" method="GET">
-                        <input type="search" name="query" placeholder="Search...">
-                    </form>
-                </a>
-                <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera.html"><img src="irudiak/IKONOAK/ikurriña.png"></a>
-
-            </div>
-        </div>
-    </div>
-    <div id="saioHasiera" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Sign in</h2>
-            <form>
-                <label for="erabiltzailea">User name:</label>
-                <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required><br><br>
-                <label for="pasahitza">Password:</label>
-                <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required><br><br>
-                <button type="submit">Sign in</button>
-            </form>
-        </div>
-    </div>
+    <?php require_once "header.php";
+    echo headerSortu();
+    ?>
+    
     <div id="saskia" class="lehioa">
         <div class="lehioa-contenido">
             <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Cart</h2>
-            <h3>Your cart is empty</h3>
+            <h2 class="lehioa">Saskia</h2>
+            <h3>Saskia hutsik dago</h3>
         </div>
     </div>
+
     <div class="general">
         <div class="sidebar">
             <ul class="prod">
                 <form>
-                   
+                    <li>
+                        <label for="modeloa">
+                            <h3 class="pm">Produktu mota:</h3>
+                        </label>
+                        <select name="modeloa" id="modeloa">
+                            <option value="mugikorra">Mugikorra</option>
+                            <option value="ordenagailua">Ordenagailua</option>
+                            <option value="aurikularra">Aurkilarra</option>
+                            <option value="monitorea">Monitorea</option>
+                        </select> <br><br>
+                    </li>
                     <li>
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item1">
                             <label class="accordion-title" for="item1">
-                                <h3>Brand:</h3>
+                                <h3>Marka:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" id=Samsung name="samsung" value="samsung" />
@@ -101,7 +66,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item2">
                             <label class="accordion-title" for="item2">
-                                <h3>Processor:</h3>
+                                <h3>Prozesagailua:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="intel" id="intel" />
@@ -123,7 +88,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item3">
                             <label class="accordion-title" for="item3">
-                                <h3>Size (inches):</h3>
+                                <h3>Tamaina (pulgadaka):</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="1" id="1" />
@@ -153,19 +118,21 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item4">
                             <label class="accordion-title" for="item4">
-                                <h3>Operating system:</h3>
+                                <h3>Sistema eragilea:</h3>
                             </label>
                             <div class="accordion-content">
-                                <input type="checkbox" name="alurin" id="alurin" />
-                                <label for="alurin">Alurin</label> <br>
-                                <input type="checkbox" name="msi" id="msi" />
-                                <label for="msi">MSI</label> <br>
-                                <input type="checkbox" name="lg" id="lg" />
-                                <label for="lg">LG</label> <br>
-                                <input type="checkbox" name="asus" id="asus" />
-                                <label for="asus">Asus</label> <br>
-                                <input type="checkbox" name="aoc" id="aoc" />
-                                <label for="aoc">AOC</label> <br>
+                                <input type="checkbox" name="android" id="android" />
+                                <label for="android">Android</label> <br>
+                                <input type="checkbox" name="miui" id="miui" />
+                                <label for="miui">MIUI</label> <br>
+                                <input type="checkbox" name="oxygenos" id="oxygenos" />
+                                <label for="oxygenos">OxygenOs</label> <br>
+                                <input type="checkbox" name="ios" id="ios" />
+                                <label for="ios">IOS</label> <br>
+                                <input type="checkbox" name="macos" id="macos" />
+                                <label for="macos">MacOS</label> <br>
+                                <input type="checkbox" name="windows" id="windows" />
+                                <label for="windows">Windows</label> <br>
                             </div>
                         </div>
                     </li> <br>
@@ -173,23 +140,23 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item5">
                             <label class="accordion-title" for="item5">
-                                <h3>Price:</h3>
+                                <h3>Prezioa:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="merkea" id="merkea" />
-                                <label for="merkea">Cheap (0€-150€)</label> <br>
+                                <label for="merkea">Merkea (0€-150€)</label> <br>
                                 <input type="checkbox" name="aukerakoa" id="aukerakoa" />
-                                <label for="aukerakoa">Bargain (150€-250€)</label> <br>
+                                <label for="aukerakoa">Aukerakoa (150€-250€)</label> <br>
                                 <input type="checkbox" name="garestia" id="garestia" />
-                                <label for="garestia">Expensive (250€-500€)</label> <br>
+                                <label for="garestia">Garestia (250€-500€)</label> <br>
                                 <input type="checkbox" name="luxuzkoa" id="luxuzkoa" />
-                                <label for="luxuzkoa">Luxury (500€+)</label> <br>
+                                <label for="luxuzkoa">Luxuzkoa (500€+)</label> <br>
                                 <br>
                             </div>
                         </div><br><br>
                     </li>
 
-                    <input class="botoiaez" type="reset" id="ezabatu" value="Delete" />
+                    <input class="botoiaez" type="reset" id="ezabatu" value="Ezabatu" />
 
 
                 </form>
@@ -197,40 +164,60 @@
         </div>
         <div id="produktua1">
             <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
-            <p><b>Brand:</b>Alurin</p>
-            <p><b>Model:</b>CoreVision 100</p>
-            <p><b>Prize:</b> 85€ </p>
+            <p><b>Marka:</b>Alurin</p>
+            <p><b>Modeloa:</b>CoreVision 100</p>
+            <p><b>Prezioa:</b> 85€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/1.1.Produktua.png" />
-            <p><b>Brand:</b> MSI</p>
-            <p><b>Model:</b> G24C4 E3</p>
-            <p><b>Prize:</b> 119€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
+            <p><b>Marka:</b> HP</p>
+            <p><b>Modeloa:</b> 15-FD0079NS</p>
+            <p><b>Prezioa:</b> 498€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/3.1.Produktua.png" />
-            <p><b>Brand:</b>LG</p>
-            <p><b>Model:</b>32UR550-B</p>
-            <p><b>Prize:</b>279€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/1.XIAOMI REDMI NOTE 13 1.png" />
+            <p><b>Marka:</b>Xiaomi</p>
+            <p><b>Modeloa:</b>Redmi Note 13</p>
+            <p><b>Prezioa:</b>164,94€ </p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/4.1.Produktua.png" />
-            <p><b>Brand:</b>Asus</p>
-            <p><b>Model:</b>VA24EHF</p>
-            <p><b>Prize:</b> 89€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
+            <p><b>Marka:</b>Lenovo</p>
+            <p><b>Modeloa:</b>IdeaPad Gaming 3 15IAH7</p>
+            <p><b>Prezioa:</b> 699€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/5.1.Produktua.png" />
-            <p><b>Brand:</b>AOC</p>
-            <p><b>Model:</b>CQ32G2SE</p>
-            <p><b>Prize:</b> 199€ </p>
+            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
+            <p><b>Marka:</b>Apple</p>
+            <p><b>Modeloa:</b>AirPods 4 </p>
+            <p><b>Prezioa:</b> 149€ </p>
         </div>
-        <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/LASTER.svg" />
+        <div id="produktua6">
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/6.OnePlus Nord 4 1.png" />
+            <p><b>Marka:</b>Oneplus</p>
+            <p><b>Modeloa:</b>Nord 4</p>
+            <p><b>Prezioa:</b> 519€ </p>
+        </div>
+        <div id="produktua7">
+            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
+            <p><b>Marka:</b>Medion</p>
+            <p><b>Modeloa:</b>Erazer Crawler E30e</p>
+            <p><b>Prezioa:</b> 649€ </p>
+        </div>
+        <div id="produktua8">
+            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/7.Galaxy Z Fold 6 1.png" />
+            <p><b>Marka:</b>Samsung</p>
+            <p><b>Modeloa:</b>Galaxy Z Fold6</p>
+            <p><b>Prezioa:</b>1701€</p>
+        </div>
+        <div id="produktua9">
+            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
+            <p><b>Marka:</b>PcCom</p>
+            <p><b>Modeloa:</b>Revolt 3050</p>
+            <p><b>Prezioa:</b> 538€ </p>
+        </div>
 
-        </div>
     </div>
-
     <footer>
         <div class="footer">
             <div class="footerra">
@@ -244,7 +231,6 @@
 
         </div>
     </footer>
-
 </body>
 
 </html>

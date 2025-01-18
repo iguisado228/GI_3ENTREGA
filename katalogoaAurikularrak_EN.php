@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AI Market | Katalogoa</title>
+    <title>AI Market | Catalogue</title>
     <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
@@ -12,65 +12,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
-                    padding="8px" class="center"></a>
-        </div>
-    </header>
-    <div class="sticky">
-        <div class="navbar">
-            <div class="left">
-                <a class="left" href="hasiera.html">Hasiera</a>
-                <a class="left" href="norGara.html">Nor gara</a>
-                <div class="subnav left">
-                    <button class="subnavbtn">Katalogoa <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="katalogoa.html"><b>Produktu guztiak |</b></a>
-                        <a href="katalogoaMugikorrak.html">Mugikorrak</a>
-                        <a href="katalogoaOrdenagailuak.html">Ordenagailuak</a>
-                        <a href="katalogoaMonitoreak.html">Monitoreak</a>
-                        <a href="katalogoaAurikularrak.html">Aurikularrak</a>
-                    </div>
-                </div>
-                <a class="left" href="prodSaldu.html">Zure produktuak saldu</a>
-                <a class="left" href="kontaktua.html">Kontaktua</a>
-            </div>
-            <div class="right">
-                <a class="right">
-                    <form action="buscar.php" method="GET">
-                        <input type="search" name="query" placeholder="Bilatu...">
-                    </form>
-                </a>
-                <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera_EN.html"><img src="irudiak/IKONOAK/uk.png"></a>
-
-            </div>
-        </div>
-    </div>
-    </form>
-    </div>
-    <div id="saioHasiera" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Saioa Hasi</h2>
-            <form>
-                <label for="erabiltzailea">Erabiltzailea:</label>
-                <input class="sesioHasiera" type="text" id="erabiltzailea" name="erabiltzailea" required><br><br>
-                <label for="pasahitza">Pasahitza:</label>
-                <input class="sesioHasiera" type="password" id="pasahitza" name="pasahitza" required><br><br>
-                <button type="submit">Saioa Hasi</button>
-            </form>
-        </div>
-    </div>
-    <div id="saskia" class="lehioa">
-        <div class="lehioa-contenido">
-            <a href="#" class="itxi">&times;</a>
-            <h2 class="lehioa">Saskia</h2>
-            <h3>Saskia hutsik dago</h3>
-        </div>
-    </div>
+    <?php require_once "headerEN.php";
+    echo createheader();
+    ?>
+    
     <div class="general">
         <div class="sidebar">
             <ul class="prod">
@@ -79,7 +24,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item1">
                             <label class="accordion-title" for="item1">
-                                <h3>Marka:</h3>
+                                <h3>Brand:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" id=Samsung name="samsung" value="samsung" />
@@ -102,7 +47,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item2">
                             <label class="accordion-title" for="item2">
-                                <h3>Prozesagailua:</h3>
+                                <h3>Processor:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="intel" id="intel" />
@@ -124,7 +69,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item3">
                             <label class="accordion-title" for="item3">
-                                <h3>Tamaina (pulgadaka):</h3>
+                                <h3>Size (inches):</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="1" id="1" />
@@ -154,7 +99,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item4">
                             <label class="accordion-title" for="item4">
-                                <h3>Sistema eragilea:</h3>
+                                <h3>Operating system:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="alurin" id="alurin" />
@@ -174,23 +119,23 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item5">
                             <label class="accordion-title" for="item5">
-                                <h3>Prezioa:</h3>
+                                <h3>Price:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="merkea" id="merkea" />
-                                <label for="merkea">Merkea (0€-150€)</label> <br>
+                                <label for="merkea">Cheap (0€-150€)</label> <br>
                                 <input type="checkbox" name="aukerakoa" id="aukerakoa" />
-                                <label for="aukerakoa">Aukerakoa (150€-250€)</label> <br>
+                                <label for="aukerakoa">Bargain (150€-250€)</label> <br>
                                 <input type="checkbox" name="garestia" id="garestia" />
-                                <label for="garestia">Garestia (250€-500€)</label> <br>
+                                <label for="garestia">Expensive (250€-500€)</label> <br>
                                 <input type="checkbox" name="luxuzkoa" id="luxuzkoa" />
-                                <label for="luxuzkoa">Luxuzkoa (500€+)</label> <br>
+                                <label for="luxuzkoa">Luxury (500€+)</label> <br>
                                 <br>
                             </div>
                         </div><br><br>
                     </li>
 
-                    <input class="botoiaez" type="reset" id="ezabatu" value="Ezabatu" />
+                    <input class="botoiaez" type="reset" id="ezabatu" value="Delete" />
 
 
                 </form>
@@ -198,33 +143,33 @@
         </div>
         <div id="produktua1">
             <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
-            <p><b>Marka:</b>Apple</p>
-            <p><b>Modeloa:</b>AirPods 4</p>
-            <p><b>Prezioa:</b> 149€ </p>
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods 4</p>
+            <p><b>Price:</b> 149€ </p>
         </div>
         <div id="produktua2">
             <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/2.AirPods Pro 2ª Generación 1.png" />
-            <p><b>Marka:</b>Apple</p>
-            <p><b>Modeloa:</b>AirPods Pro 2ª Gen.</p>
-            <p><b>Prezioa:</b> 223,99€ </p>
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods Pro 2ª Gen.</p>
+            <p><b>Price:</b> 223,99€ </p>
         </div>
         <div id="produktua3">
             <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/3.AirPods 2ªGeneración 1.png" />
-            <p><b>Marka:</b>Apple</p>
-            <p><b>Modeloa:</b>AirPods 2ª Gen.</p>
-            <p><b>Prezioa:</b>94€ </p>
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods 2ª Gen.</p>
+            <p><b>Price:</b>94€ </p>
         </div>
         <div id="produktua4">
             <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/4.AirPods 3ªGeneración 2 1.png" />
-            <p><b>Marka:</b>Apple</p>
-            <p><b>Modeloa:</b>AirPods 3ª Gen.</p>
-            <p><b>Prezioa:</b> 125,40€ </p>
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods 3ª Gen.</p>
+            <p><b>Price:</b> 125,40€ </p>
         </div>
         <div id="produktua5">
             <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/5.AirPods Max 1.png" />
-            <p><b>Marka:</b>Apple</p>
-            <p><b>Modeloa:</b>AirPods Max</p>
-            <p><b>Prezioa:</b> 403,99€ </p>
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods Max</p>
+            <p><b>Price:</b> 403,99€ </p>
         </div>
         <div id="produktua5">
             <img id="argazkia" src="irudiak/PRODUKTUAK/LASTER.svg" />
