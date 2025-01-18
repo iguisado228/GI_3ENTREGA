@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>AI Market</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css" /> 
-    <?php require_once "header.php" ?>
+    
 </head>
 
 <body>
+<?php require_once "header.php"; ?>
     <div id="saioHasiera" class="lehioa">
         <div class="lehioa-contenido">
             <a href="#" class="itxi">&times;</a>
@@ -131,17 +133,7 @@
     </div>
 
     <footer>
-        <div class="footer">
-            <div class="footerra">
-                <div class="footlogo"><img src="irudiak/IKONOAK/LOGO txuria.svg" width="100px"></div>
-                <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> C. Urdaneta, 6, 20240 Ordizia,
-                    Guipuzkoa</div>
-                <div class="footmail footleft"><i class="fa-solid fa-envelope"></i> administrazioa@iamarket.com</div>
-                <div class="foottel footleft"><i class="fa-solid fa-phone"></i> +34 623 34 76 34</div>
-            </div>
-            <div class="footrights"><i class="fa-solid fa-copyright"></i> 2024 AI MARKET S.L.</div>
-
-        </div>
+        <?php require_once "footer.php"; ?>
     </footer>
 
 
