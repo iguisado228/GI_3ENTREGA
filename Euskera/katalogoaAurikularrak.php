@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>AI Market | Katalogoa</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     </linkrel>
 </head>
 
@@ -142,43 +142,43 @@
             </ul>
         </div>
         <div id="produktua1">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
             <p><b>Marka:</b>Apple</p>
             <p><b>Modeloa:</b>AirPods 4</p>
             <p><b>Prezioa:</b> 149€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/2.AirPods Pro 2ª Generación 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/2.AirPods Pro 2ª Generación 1.png" />
             <p><b>Marka:</b>Apple</p>
             <p><b>Modeloa:</b>AirPods Pro 2ª Gen.</p>
             <p><b>Prezioa:</b> 223,99€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/3.AirPods 2ªGeneración 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/3.AirPods 2ªGeneración 1.png" />
             <p><b>Marka:</b>Apple</p>
             <p><b>Modeloa:</b>AirPods 2ª Gen.</p>
             <p><b>Prezioa:</b>94€ </p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/4.AirPods 3ªGeneración 2 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/4.AirPods 3ªGeneración 2 1.png" />
             <p><b>Marka:</b>Apple</p>
             <p><b>Modeloa:</b>AirPods 3ª Gen.</p>
             <p><b>Prezioa:</b> 125,40€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/5.AirPods Max 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/5.AirPods Max 1.png" />
             <p><b>Marka:</b>Apple</p>
             <p><b>Modeloa:</b>AirPods Max</p>
             <p><b>Prezioa:</b> 403,99€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/LASTER.svg" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/LASTER.svg" />
 
         </div>
     </div>
 
     <footer>
-        <?php require_once "footer.php"; ?>
+        <?php require_once "../footer.php"; ?>
     </footer>
 </body>
 

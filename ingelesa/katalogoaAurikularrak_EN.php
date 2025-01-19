@@ -4,34 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>AI Market | Catalogue</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     </linkrel>
 </head>
 
 <body>
-    
-<?php require_once "headerEN.php";
+    <?php require_once "headerEN.php";
     echo createheader();
     ?>
-
+    
     <div class="general">
         <div class="sidebar">
             <ul class="prod">
                 <form>
-                    <li>
-                        <label for="Model">
-                            <h3 class="pm">Product type:</h3>
-                        </label>
-                        <select name="Model" id="Model">
-                            <option value="mugikorra">Mobile phone</option>
-                            <option value="ordenagailua">Laptop</option>
-                            <option value="aurikularra">Headphone</option>
-                            <option value="monitorea">Screen</option>
-                        </select> <br><br>
-                    </li>
                     <li>
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item1">
@@ -114,18 +102,16 @@
                                 <h3>Operating system:</h3>
                             </label>
                             <div class="accordion-content">
-                                <input type="checkbox" name="android" id="android" />
-                                <label for="android">Android</label> <br>
-                                <input type="checkbox" name="miui" id="miui" />
-                                <label for="miui">MIUI</label> <br>
-                                <input type="checkbox" name="oxygenos" id="oxygenos" />
-                                <label for="oxygenos">OxygenOs</label> <br>
-                                <input type="checkbox" name="ios" id="ios" />
-                                <label for="ios">IOS</label> <br>
-                                <input type="checkbox" name="macos" id="macos" />
-                                <label for="macos">MacOS</label> <br>
-                                <input type="checkbox" name="windows" id="windows" />
-                                <label for="windows">Windows</label> <br>
+                                <input type="checkbox" name="alurin" id="alurin" />
+                                <label for="alurin">Alurin</label> <br>
+                                <input type="checkbox" name="msi" id="msi" />
+                                <label for="msi">MSI</label> <br>
+                                <input type="checkbox" name="lg" id="lg" />
+                                <label for="lg">LG</label> <br>
+                                <input type="checkbox" name="asus" id="asus" />
+                                <label for="asus">Asus</label> <br>
+                                <input type="checkbox" name="aoc" id="aoc" />
+                                <label for="aoc">AOC</label> <br>
                             </div>
                         </div>
                     </li> <br>
@@ -137,13 +123,13 @@
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="merkea" id="merkea" />
-                                <label for="merkea">Merkea (0€-150€)</label> <br>
+                                <label for="merkea">Cheap (0€-150€)</label> <br>
                                 <input type="checkbox" name="aukerakoa" id="aukerakoa" />
-                                <label for="aukerakoa">Aukerakoa (150€-250€)</label> <br>
+                                <label for="aukerakoa">Bargain (150€-250€)</label> <br>
                                 <input type="checkbox" name="garestia" id="garestia" />
-                                <label for="garestia">Garestia (250€-500€)</label> <br>
+                                <label for="garestia">Expensive (250€-500€)</label> <br>
                                 <input type="checkbox" name="luxuzkoa" id="luxuzkoa" />
-                                <label for="luxuzkoa">Luxuzkoa (500€+)</label> <br>
+                                <label for="luxuzkoa">Luxury (500€+)</label> <br>
                                 <br>
                             </div>
                         </div><br><br>
@@ -156,64 +142,45 @@
             </ul>
         </div>
         <div id="produktua1">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
-            <p><b>Brand:</b>Alurin</p>
-            <p><b>Model:</b>CoreVision 100</p>
-            <p><b>Price:</b> 85€ </p>
-        </div>
-        <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
-            <p><b>Brand:</b> HP</p>
-            <p><b>Model:</b> 15-FD0079NS</p>
-            <p><b>Price:</b> 498€ </p>
-        </div>
-        <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/1.XIAOMI REDMI NOTE 13 1.png" />
-            <p><b>Brand:</b>Xiaomi</p>
-            <p><b>Model:</b>Redmi Note 13</p>
-            <p><b>Price:</b>164,94€ </p>
-        </div>
-        <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
-            <p><b>Brand:</b>Lenovo</p>
-            <p><b>Model:</b>IdeaPad Gaming 3 15IAH7</p>
-            <p><b>Price:</b> 699€ </p>
-        </div>
-        <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
             <p><b>Brand:</b>Apple</p>
-            <p><b>Model:</b>AirPods 4 </p>
+            <p><b>Model:</b>AirPods 4</p>
             <p><b>Price:</b> 149€ </p>
         </div>
-        <div id="produktua6">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/6.OnePlus Nord 4 1.png" />
-            <p><b>Brand:</b>Oneplus</p>
-            <p><b>Model:</b>Nord 4</p>
-            <p><b>Price:</b> 519€ </p>
+        <div id="produktua2">
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/2.AirPods Pro 2ª Generación 1.png" />
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods Pro 2ª Gen.</p>
+            <p><b>Price:</b> 223,99€ </p>
         </div>
-        <div id="produktua7">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
-            <p><b>Brand:</b>Medion</p>
-            <p><b>Model:</b>Erazer Crawler E30e</p>
-            <p><b>Price:</b> 649€ </p>
+        <div id="produktua3">
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/3.AirPods 2ªGeneración 1.png" />
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods 2ª Gen.</p>
+            <p><b>Price:</b>94€ </p>
         </div>
-        <div id="produktua8">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/7.Galaxy Z Fold 6 1.png" />
-            <p><b>Brand:</b>Samsung</p>
-            <p><b>Model:</b>Galaxy Z Fold6</p>
-            <p><b>Price:</b>1701€</p>
+        <div id="produktua4">
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/4.AirPods 3ªGeneración 2 1.png" />
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods 3ª Gen.</p>
+            <p><b>Price:</b> 125,40€ </p>
         </div>
-        <div id="produktua9">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
-            <p><b>Brand:</b>PcCom</p>
-            <p><b>Model:</b>Revolt 3050</p>
-            <p><b>Price:</b> 538€ </p>
+        <div id="produktua5">
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/5.AirPods Max 1.png" />
+            <p><b>Brand:</b>Apple</p>
+            <p><b>Model:</b>AirPods Max</p>
+            <p><b>Price:</b> 403,99€ </p>
         </div>
+        <div id="produktua5">
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/LASTER.svg" />
 
+        </div>
     </div>
+
     <footer>
-        <?php require_once "footer.php"; ?>
+        <?php require_once "../footer.php"; ?>
     </footer>
+
 </body>
 
 </html>

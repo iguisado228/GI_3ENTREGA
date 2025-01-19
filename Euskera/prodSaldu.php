@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>AI Market | Zure produktuak saldu</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     </linkrel>
 </head>
 
@@ -83,7 +83,7 @@
         </div>
     </div>
     <footer>
-        <?php require_once "footer.php"; ?>
+        <?php require_once "../footer.php"; ?>
     </footer>
 </body>
 

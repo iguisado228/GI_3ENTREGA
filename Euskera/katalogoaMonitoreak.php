@@ -3,29 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AI Market | Catalogue</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <title>AI Market | Katalogoa</title>
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     </linkrel>
 </head>
 
 <body>
-<?php require_once "headerEN.php";
-    echo createheader();
+    <?php require_once "header.php";
+    echo headerSortu();
     ?>
     
     <div class="general">
         <div class="sidebar">
             <ul class="prod">
                 <form>
-                   
+
                     <li>
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item1">
                             <label class="accordion-title" for="item1">
-                                <h3>Brand:</h3>
+                                <h3>Marka:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" id=Samsung name="samsung" value="samsung" />
@@ -48,7 +48,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item2">
                             <label class="accordion-title" for="item2">
-                                <h3>Processor:</h3>
+                                <h3>Prozesagailua:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="intel" id="intel" />
@@ -70,7 +70,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item3">
                             <label class="accordion-title" for="item3">
-                                <h3>Size (inches):</h3>
+                                <h3>Tamaina (pulgadaka):</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="1" id="1" />
@@ -100,7 +100,7 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item4">
                             <label class="accordion-title" for="item4">
-                                <h3>Operating system:</h3>
+                                <h3>Sistema eragilea:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="alurin" id="alurin" />
@@ -120,67 +120,68 @@
                         <div class="accordion-item">
                             <input type="checkbox" class="check" id="item5">
                             <label class="accordion-title" for="item5">
-                                <h3>Price:</h3>
+                                <h3>Prezioa:</h3>
                             </label>
                             <div class="accordion-content">
                                 <input type="checkbox" name="merkea" id="merkea" />
-                                <label for="merkea">Cheap (0€-150€)</label> <br>
+                                <label for="merkea">Merkea (0€-150€)</label> <br>
                                 <input type="checkbox" name="aukerakoa" id="aukerakoa" />
-                                <label for="aukerakoa">Bargain (150€-250€)</label> <br>
+                                <label for="aukerakoa">Aukerakoa (150€-250€)</label> <br>
                                 <input type="checkbox" name="garestia" id="garestia" />
-                                <label for="garestia">Expensive (250€-500€)</label> <br>
+                                <label for="garestia">Garestia (250€-500€)</label> <br>
                                 <input type="checkbox" name="luxuzkoa" id="luxuzkoa" />
-                                <label for="luxuzkoa">Luxury (500€+)</label> <br>
+                                <label for="luxuzkoa">Luxuzkoa (500€+)</label> <br>
                                 <br>
                             </div>
                         </div><br><br>
                     </li>
 
-                    <input class="botoiaez" type="reset" id="ezabatu" value="Delete" />
+                    <input class="botoiaez" type="reset" id="ezabatu" value="Ezabatu" />
 
 
                 </form>
             </ul>
         </div>
         <div id="produktua1">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
-            <p><b>Brand:</b>Alurin</p>
-            <p><b>Model:</b>CoreVision 100</p>
-            <p><b>Prize:</b> 85€ </p>
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
+            <p><b>Marka:</b>Alurin</p>
+            <p><b>Modeloa:</b>CoreVision 100</p>
+            <p><b>Prezioa:</b> 85€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/1.1.Produktua.png" />
-            <p><b>Brand:</b> MSI</p>
-            <p><b>Model:</b> G24C4 E3</p>
-            <p><b>Prize:</b> 119€ </p>
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MONITOREAK/1.1.Produktua.png" />
+            <p><b>Marka:</b> MSI</p>
+            <p><b>Modeloa:</b> G24C4 E3</p>
+            <p><b>Prezioa:</b> 119€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/3.1.Produktua.png" />
-            <p><b>Brand:</b>LG</p>
-            <p><b>Model:</b>32UR550-B</p>
-            <p><b>Prize:</b>279€ </p>
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MONITOREAK/3.1.Produktua.png" />
+            <p><b>Marka:</b>LG</p>
+            <p><b>Modeloa:</b>32UR550-B</p>
+            <p><b>Prezioa:</b>279€ </p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/4.1.Produktua.png" />
-            <p><b>Brand:</b>Asus</p>
-            <p><b>Model:</b>VA24EHF</p>
-            <p><b>Prize:</b> 89€ </p>
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MONITOREAK/4.1.Produktua.png" />
+            <p><b>Marka:</b>Asus</p>
+            <p><b>Modeloa:</b>VA24EHF</p>
+            <p><b>Prezioa:</b> 89€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/5.1.Produktua.png" />
-            <p><b>Brand:</b>AOC</p>
-            <p><b>Model:</b>CQ32G2SE</p>
-            <p><b>Prize:</b> 199€ </p>
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MONITOREAK/5.1.Produktua.png" />
+            <p><b>Marka:</b>AOC</p>
+            <p><b>Modeloa:</b>CQ32G2SE</p>
+            <p><b>Prezioa:</b> 199€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/LASTER.svg" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/LASTER.svg" />
 
         </div>
     </div>
 
     <footer>
-        <?php require_once "footer.php"; ?>
+        <?php require_once "../footer.php"; ?>
     </footer>
+
 </body>
 
 </html>

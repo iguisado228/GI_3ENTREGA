@@ -3,7 +3,7 @@
 function headerSortu () {
     ?><header>
         <div class="header">
-            <a href="hasiera.php"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
+            <a href="hasiera.php"><img class="logo" src="../irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
                     padding="8px" class="center"></a>
         </div>
     </header>
@@ -33,7 +33,7 @@ function headerSortu () {
                 </a>
                 <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera_EN.php"><img src="irudiak/IKONOAK/uk.png"></a>
+                <a class="hizkuntza hiz right" href="../ingelesa/hasiera_EN.php"><img src="../irudiak/IKONOAK/uk.png"></a>
 
             </div>
         </div>

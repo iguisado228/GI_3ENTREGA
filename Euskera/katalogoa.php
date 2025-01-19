@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>AI Market | Katalogoa</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     </linkrel>
 </head>
 
@@ -15,7 +15,7 @@
     <?php require_once "header.php";
     echo headerSortu();
     ?>
-    
+
     <div id="saskia" class="lehioa">
         <div class="lehioa-contenido">
             <a href="#" class="itxi">&times;</a>
@@ -33,7 +33,7 @@
                             <h3 class="pm">Produktu mota:</h3>
                         </label>
                         <select name="modeloa" id="modeloa">
-                            <option value="mugikorra">Mugikorra</option>
+                            <option value="../mugikorra">Mugikorra</option>
                             <option value="ordenagailua">Ordenagailua</option>
                             <option value="aurikularra">Aurkilarra</option>
                             <option value="monitorea">Monitorea</option>
@@ -163,55 +163,55 @@
             </ul>
         </div>
         <div id="produktua1">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MONITOREAK/2.1.Produktua.png" />
             <p><b>Marka:</b>Alurin</p>
             <p><b>Modeloa:</b>CoreVision 100</p>
             <p><b>Prezioa:</b> 85€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
             <p><b>Marka:</b> HP</p>
             <p><b>Modeloa:</b> 15-FD0079NS</p>
             <p><b>Prezioa:</b> 498€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/1.XIAOMI REDMI NOTE 13 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MUGIKORRAK/1.XIAOMI REDMI NOTE 13 1.png" />
             <p><b>Marka:</b>Xiaomi</p>
             <p><b>Modeloa:</b>Redmi Note 13</p>
             <p><b>Prezioa:</b>164,94€ </p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
             <p><b>Marka:</b>Lenovo</p>
             <p><b>Modeloa:</b>IdeaPad Gaming 3 15IAH7</p>
             <p><b>Prezioa:</b> 699€ </p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/AURIKULARRAK/1.AirPods 4 1.png" />
             <p><b>Marka:</b>Apple</p>
             <p><b>Modeloa:</b>AirPods 4 </p>
             <p><b>Prezioa:</b> 149€ </p>
         </div>
         <div id="produktua6">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/6.OnePlus Nord 4 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MUGIKORRAK/6.OnePlus Nord 4 1.png" />
             <p><b>Marka:</b>Oneplus</p>
             <p><b>Modeloa:</b>Nord 4</p>
             <p><b>Prezioa:</b> 519€ </p>
         </div>
         <div id="produktua7">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
             <p><b>Marka:</b>Medion</p>
             <p><b>Modeloa:</b>Erazer Crawler E30e</p>
             <p><b>Prezioa:</b> 649€ </p>
         </div>
         <div id="produktua8">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/MUGIKORRAK/7.Galaxy Z Fold 6 1.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/MUGIKORRAK/7.Galaxy Z Fold 6 1.png" />
             <p><b>Marka:</b>Samsung</p>
             <p><b>Modeloa:</b>Galaxy Z Fold6</p>
             <p><b>Prezioa:</b>1701€</p>
         </div>
         <div id="produktua9">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
             <p><b>Marka:</b>PcCom</p>
             <p><b>Modeloa:</b>Revolt 3050</p>
             <p><b>Prezioa:</b> 538€ </p>
@@ -219,7 +219,7 @@
 
     </div>
     <footer>
-        <?php require_once "footer.php"; ?>
+        <?php require_once "../footer.php"; ?>
     </footer>
 </body>
 

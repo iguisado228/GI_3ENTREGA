@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>AI Market | Katalogoa</title>
-    <link rel="icon" href="irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../irudiak/IKONOAK/favicon_light.svg" media="(prefers-color-scheme: light)">
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     </linkrel>
 </head>
 
@@ -148,55 +148,55 @@
             </ul>
         </div>
         <div id="produktua1">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/1.2.Produktua.png" />
             <p><b>Marka:</b> HP</p>
             <p><b>Modeloa:</b> FD0079NS</p>
             <p><b>Prezioa:</b> 498€ </p>
         </div>
         <div id="produktua2">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/2.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/2.1.Produktua.png" />
             <p><b>Marka:</b> Alurin</p>
             <p><b>Modeloa:</b>  Go Start N24</p>
             <p><b>Prezioa:</b> 239€ </p>
         </div>
         <div id="produktua3">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/3.1.Produktua.png" />
             <p><b>Marka:</b> Lenovo</p>
             <p><b>Modeloa:</b> IdeaPad Gaming 3 15IAH7</p>
             <p><b>Prezioa:</b> 699€</p>
         </div>
         <div id="produktua4">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/4.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/4.1.Produktua.png" />
             <p><b>Marka:</b> Apple</p>
             <p><b>Modeloa:</b> MacBook Air Apple M3</p>
             <p><b>Prezioa:</b> 1179€</p>
         </div>
         <div id="produktua5">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/5.1.Produktua.png" />
             <p><b>Marka:</b> Medion</p>
             <p><b>Modeloa:</b> Erazer Crawler E30e</p>
             <p><b>Prezioa:</b> 649€</p>
         </div>
         <div id="produktua6">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/6.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/6.1.Produktua.png" />
             <p><b>Marka:</b> Asus</p>
             <p><b>Modeloa:</b> TUF Gaming F15 FX506LH-HN042</p>
             <p><b>Prezioa:</b> 627€</p>
         </div>
         <div id="produktua7">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/7.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/7.1.Produktua.png" />
             <p><b>Marka:</b> MSI</p>
             <p><b>Modeloa:</b> Modern 15 B7M-243XES</p>
             <p><b>Prezioa:</b> 509€</p>
         </div>
         <div id="produktua8">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/8.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/8.1.Produktua.png" />
             <p><b>Marka:</b> Acer</p>
             <p><b>Modeloa:</b> Gaming Nitro V 15 ANV15-51</p>
             <p><b>Prezioa:</b> 859€</p>
         </div>
         <div id="produktua9">
-            <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
+            <img id="argazkia" src="../irudiak/PRODUKTUAK/ORDENAGAILUAK/9.1.Produktua.png" />
             <p><b>Marka:</b> PcCom</p>
             <p><b>Modeloa:</b> Revolt 3050</p>
             <p><b>Prezioa:</b> 538€ </p>
@@ -204,7 +204,7 @@
  
     </div>
     <footer>
-        <?php require_once "footer.php"; ?>
+        <?php require_once "../footer.php"; ?>
     </footer>
 
 </body>

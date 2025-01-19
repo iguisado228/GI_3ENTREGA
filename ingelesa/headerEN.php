@@ -5,7 +5,7 @@ function createheader () {
 
 <header>
         <div class="header">
-            <a href="hasiera_EN.php"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
+            <a href="hasiera_EN.php"><img class="logo" src="../irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
                     padding="8px" class="center"></a>
         </div>
     </header>
@@ -35,7 +35,7 @@ function createheader () {
                 </a>
                 <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera.php"><img src="irudiak/IKONOAK/ikurriña.png"></a>
+                <a class="hizkuntza hiz right" href="../Euskera/hasiera.php"><img src="../irudiak/IKONOAK/ikurriña.png"></a>
 
             </div>
         </div>

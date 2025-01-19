@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="footerra">
-        <div class="footlogo"><img src="irudiak/IKONOAK/LOGO txuria.svg" width="100px"></div>
+        <div class="footlogo"><img src="../irudiak/IKONOAK/LOGO txuria.svg" width="100px"></div>
         <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> C. Urdaneta, 6, 20240 Ordizia,
             Guipuzkoa</div>
         <div class="footmail footleft"><i class="fa-solid fa-envelope"></i> administrazioa@iamarket.com</div>
