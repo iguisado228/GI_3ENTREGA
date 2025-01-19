@@ -9,7 +9,6 @@
 
     <script src="https://kit.fontawesome.com/83f15f6aab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css" /> 
-<<<<<<< HEAD
     
 </head>
 
@@ -35,15 +34,6 @@
             <h3>Saskia hutsik dago</h3>
         </div>
     </div>
-=======
-</head>
-
-<body>
-<?php require_once "header.php"; 
-echo headerSortu();
-?>
-
->>>>>>> 92d187b279f06bf3684cd227d4b0f94e1d8d9ee7
     <img class="deskontuak" src="irudiak/DESKONTUAK/Deskontuak.png" alt="deskontuak">
     <div class="produktuak">
         <h1>Azken produktuak</h1>
